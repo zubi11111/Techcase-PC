@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="eus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TECHCASE PC - Maletak bezala gurpilak eta heldulekuak dituzten ordenagailuak. Zure irtenbide teknologiko eramangarria.">
+    <title>TECHCASE PC</title>
+    <link rel="icon" type="image/png" href="logo-Photoroom.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="nagusia.css">
+</head>
+
+<body>
+    <header>
+        <div style="text-align: center; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center;">
+                <img src="logo.png" alt="Logo de TECHCASE PC" style="height: 50px;">
+                <h1>TECHCASE PC</h1>
+            </div>
+            <div id="buscador" style="margin: 10px auto; max-width: 400px;">
+                <input type="text" id="searchInput" class="form-control" placeholder="Bilatu">
+                <button id="searchButton" onclick="buscar()">Bilatu</button>
+            </div>
+        </div>
+
+        <div class="menu-container" style="position: absolute; top: 15px; right: 20px;">
+            <button class="menu-button" style="background: none; border: none; cursor: pointer; position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                    <path d="M3 3.5A.5.5 0 0 1 3.5 3h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM3 9.5A.5.5 0 0 1 3.5 9h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM9 3.5A.5.5 0 0 1 9.5 3h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM9 9.5A.5.5 0 0 1 9.5 9h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2z"/>
+                </svg>
+            </button>
+            <div class="menu-dropdown" style="display: none; position: absolute; top: 40px; right: 0; background: white; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); width: 200px; z-index: 1000;">
+                <ul style="list-style: none; padding: 10px; margin: 0;">
+                    <li><a href="TECHCASE.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">Hasiera</a></li>
+                    <li><a href="erosi.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">erosi</a></li>
+                    <li><a href="guri_buruz.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">guri buruz</a></li>
+                    <li><a href="kontaktuak.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">Kontaktuak</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+        <!-- que funcione el buscador -->
+    <script>
+        document.querySelector(".menu-button").addEventListener("click", function () {
+            const menuDropdown = document.querySelector(".menu-dropdown");
+            menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
+        });
+    </script>
+
+    <section class="hero">
+        <h2>Teknologia mugimenduan</h2>
+        <p>Ordenagailu eramangarrien etorkizuna hemen dago. Eraman zure ordenagailua nahi duzun lekura, konplikaziorik gabe!</p>
+        <a href="#products" class="cta-button">IKusi gure produktuak</a>
+    </section>
+
+    <section id="products" class="products">
+        <div class="product-card" onclick="showProductModal('Ordenagailu gurpilduna', 'final.webp', 'Errendimendua kaltetu gabe mugikortasuna behar duten profesionalentzako lagun ezin hobea.', 100)">
+            <img src="final.webp" alt="Ordenagailu gurpilduna">
+            <h3>Ordenagailu gurpilduna</h3>
+            <p>Errendimendua kaltetu gabe mugikortasuna behar duten profesionalentzako lagun ezin hobea.</p>
+        </div>
+        <div class="product-card" onclick="showProductModal('Ordenagailu pertsonalizatua', 'personalizada .webp', 'Aldatu zure ordenagailuaren forma, kolorea, osagaiak... gure laguntzarekin.', 200)">
+            <img src="personalizada .webp" alt="Ordenagailu pertsonalizatua">
+            <h3>Ordenagailua pertsonalizatu</h3>
+            <p>aldatu zure ordenagailuaren forma, kolorea, osagaiak... gure laguntzarekin.</p>
+        </div>
+        <div class="product-card" onclick="showProductModal('Ordenagailu eguzki plakarekin', 'placa.webp', 'Lagundu ingurumenari energia aurreztuz gure asmakizun berriarekin.', 150)">
+            
+            <img src="placa.webp" alt="Ordenagailu eguzki plakarekin">
+
+            <h3>Ordenagailua eguzki plakarekin</h3>
+
+            <p>Lagundu ingurumenari energia aurreztuz gure asmakizun berriarekin.</p>
+
+        </div>
+        
+    </section>
+
+    <!-- Modal para mostrar el producto con la imagen ampliada -->
+    <div id="productModal" class="product-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; z-index: 1000;">
+
+        <div class="modal-content" style="background: white; border-radius: 8px; max-width: 600px; width: 90%; padding: 20px; position: relative; text-align: center;">
+            
+            <button id="closeModal" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #333;">&times;</button>
+            <div id="modalProductContent"></div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TECHCASE PC. Eskubide guztiak erreserbatuta.</p>
+        <div>
+            <a href="pribatasuna.txt" target="_blank">Pribatutasuna eta baldintzak</a>
+        </div>
+    </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+        // Función para mostrar el modal del producto
+        function showProductModal(name, imgSrc, description, price) {
+    const modal = document.getElementById("productModal");
+    const modalContent = document.getElementById("modalProductContent");
+
+    modalContent.innerHTML = `
+        <img src="${imgSrc}" alt="${name}" style="max-width: 50%; border-radius: 8px;">
+        <h3>${name}</h3>
+        <p>${description}</p>
+        <p>Prezioa: ${price}€</p>
+        <button id="modalBuyButton" style="font-size: 1.2rem; color: white; background-color: #16a085; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Erosi</button>
+    `;
+    
+    // Mostrar el modal
+    modal.style.display = "flex";
+
+    // Agregar funcionalidad al botón "Erosi"
+    document.getElementById("modalBuyButton").addEventListener("click", function() {
+        // Aquí puedes agregar la lógica para agregar al carrito o cualquier acción que desees
+    });
+}
+
+        // Función para cerrar el modal
+        document.getElementById("closeModal").addEventListener("click", function() {
+            document.getElementById("productModal").style.display = "none";
+        });
+
+    </script>
+
+</body>
+
+</html>

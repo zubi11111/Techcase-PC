@@ -1,0 +1,43 @@
+﻿Zerbitzu Baldintzak, Pribatutasun Politika eta Cookie Politika
+1. Zerbitzu Baldintzak
+Sarrera
+Webgune edo aplikazio hau erabiliz gero, zerbitzu baldintza hauek onartzen dituzu. Baldintza hauek legezko akordio bat dira zure eta [Enpresaren Izena] artean. Baldintza hauetako batekin ados ez bazaude, ez zenuke gure zerbitzuak erabili behar.
+Erabilera Baimendua
+Gure zerbitzuak erabilera pertsonalerako eta ez komertzialerako dira. Debekatuta dago:
+    • Edukia baimenik gabe erreproduzitzea, banatzea edo aldatzea.
+    • Jarduera legez kanpokoak edo gunearen segurtasuna arriskuan jartzen dutenak egitea.
+Erantzukizunaren Mugaketa
+[Enpresaren Izena] ez da zerbitzuen erabileratik eratorritako kalte zuzenen, zeharkakoen edo ustekabekoen erantzule izango.
+
+2. Pribatutasun Politika
+Zer Informazio Biltzen Dugu
+Zure esperientzia hobetzeko datuak biltzen ditugu:
+    • Datu pertsonalak: zure izena, posta elektronikoa eta telefono zenbakia, zuk emandakoak.
+    • Erabileraren datuak: IP helbidea, kokapen aproxibatua eta webguneko nabigazio historia.
+Nola Erabiltzen Dugu Zure Informazioa
+Biltzen dugun informazioa honetarako erabiltzen dugu:
+    • Zerbitzuak eskaintzeko eta hobetzeko.
+    • Edukia eta publizitatea pertsonalizatzeko.
+    • Legezko betekizunak betetzeko.
+Informazioa Partekatzea
+Zure datu pertsonalak ez ditugu hirugarrenekin partekatzen, honako egoeretan izan ezik:
+    • Gure zerbitzuak eskaintzeko beharrezkoa denean (adibidez, hornitzaileekin).
+    • Legeak hala eskatzen duenean.
+Segurtasuna
+Zure datuak babesteko neurri teknikoak eta antolamenduzkoak hartzen ditugu. Hala ere, sistemarik ez da erabat segurua, eta ezin dugu informazioaren babesa erabat bermatu.
+
+3. Cookie Politika
+Zer dira Cookieak
+Cookieak zure gailuan gordetzen diren testu-fitxategi txikiak dira gure webgunean nabigatzen duzunean.
+Erabiltzen Ditugun Cookie Motak
+    • Funtsezko cookieak: webgunearen funtzionamendurako beharrezkoak direnak.
+    • Errendimenduko cookieak: webgunea nola erabiltzen duzun aztertzeko datu anonimoak biltzen dituztenak.
+    • Publizitate cookieak: iragarki pertsonalizatuak erakusteko aukera ematen dutenak.
+Cookieak Kudeatzea
+Cookie hobespenak zure nabigatzailearen ezarpenetatik edo gure webguneko ezarpenen ataletik kudea ditzakezu. Hala ere, cookie batzuk desgaitzeak zure erabiltzaile esperientzia kaltetzea ekar dezake.
+
+Harremana
+Baldintza edo politika hauei buruzko zalantzarik izanez gero, jarri gurekin harremanetan [posta elektronikoa] helbidean edo gure webguneko harremanetarako formularioaren bidez.
+Azken eguneratzea: 2024ko azaroa 22
+
+

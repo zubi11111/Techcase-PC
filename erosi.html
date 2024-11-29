@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="TECHCASE PC - Tu carrito de compras para productos tecnológicos.">
+   <title>TECHCASE PC</title>
+   <link rel="icon" type="image/png" href="logo-Photoroom.jpg">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+           color: #333;
+           line-height: 1.6;
+       }
+       header {
+           background: linear-gradient(to right, #9a98b1, #e0dff1);
+           color: #fff;
+           padding: 20px 10px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+       }
+       header img {
+           height: 70px;
+           margin-bottom: 10px;
+       }
+       header h1 {
+           font-size: 2rem;
+           margin: 10px 0;
+       }
+       .cart-container {
+           padding: 50px 20px;
+           max-width: 800px;
+           margin: 0 auto;
+           background-color: #fff;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+       .cart-container h2 {
+           font-size: 2rem;
+           margin-bottom: 20px;
+           text-align: center;
+       }
+       .cart-item {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           margin-bottom: 20px;
+           border-bottom: 1px solid #ddd;
+           padding-bottom: 10px;
+       }
+       .cart-item img {
+           height: 80px;
+           border-radius: 5px;
+       }
+       .cart-item-details {
+           flex: 1;
+           margin-left: 20px;
+       }
+       .cart-item-title {
+           font-size: 1.2rem;
+           font-weight: bold;
+           margin-bottom: 5px;
+       }
+       .cart-item-price {
+           color: #16a085;
+           font-size: 1.1rem;
+       }
+       .cart-item-remove {
+           color: red;
+           cursor: pointer;
+       }
+       .total-container {
+           margin-top: 30px;
+           text-align: right;
+       }
+       .total-container h3 {
+           font-size: 1.5rem;
+       }
+       .checkout-button {
+           background-color: #16a085;
+           color: white;
+           border: none;
+           padding: 10px 20px;
+           font-size: 1.2rem;
+           border-radius: 5px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+       }
+       .checkout-button:hover {
+           background-color: #1abc9c;
+       }
+       footer {
+           background-color: #34495e;
+           color: #fff;
+           padding: 30px 0;
+           text-align: center;
+       }
+       footer a {
+           color: #fff;
+           text-decoration: none;
+           margin: 0 15px;
+       }
+       footer a:hover {
+           text-decoration: underline;
+       }
+      
+   </style>
+</head>
+<body>
+   <header style="background: linear-gradient(to right, #9a98b1, #e0dff1); color: #fff; padding: 20px 30px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; text-align: center;">
+       <div style="display: flex; align-items: center; margin-right: auto;">
+           <img src="logo.png" alt="Logo de TECHCASE PC" style="height: 50px;">
+           <h1>TECHCASE PC</h1>
+       </div>
+      
+       <!-- Menú a la derecha -->
+       <div class="menu-container" style="position: relative; display: flex; align-items: center; justify-content: flex-end; margin-left: 20px;">
+           <button class="menu-button" style="background: none; border: none; cursor: pointer; position: relative;">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                   <path d="M3 3.5A.5.5 0 0 1 3.5 3h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM3 9.5A.5.5 0 0 1 3.5 9h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM9 3.5A.5.5 0 0 1 9.5 3h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zM9 9.5A.5.5 0 0 1 9.5 9h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2z"/>
+               </svg>
+           </button>
+           <div class="menu-dropdown" style="display: none; position: absolute; top: 40px; right: 0; background: white; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); width: 200px; z-index: 1000;">
+               <ul style="list-style: none; padding: 10px; margin: 0;">
+                   <li><a href="TECHCASE.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">Hasiera</a></li>
+                   <li><a href="erosi.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">erosi</a></li>
+                   <li><a href="guri_buruz.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">guri buruz</a></li>
+                   <li><a href="kontaktuak.html" style="text-decoration: none; color: #333; display: block; padding: 8px;">Kontaktuak</a></li>
+               </ul>
+           </div>
+       </div>
+   </header>
+  
+  
+   <script>
+       document.querySelector(".menu-button").addEventListener("click", function () {
+           const menuDropdown = document.querySelector(".menu-dropdown");
+           menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
+       });
+   </script>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <script>
+       function removeItem(button) {
+           const item = button.closest(".cart-item");
+           const priceText = item.querySelector(".cart-item-price").textContent;
+           const price = parseFloat(priceText.replace("€", ""));
+           item.remove();
+           updateTotal(-price);
+       }
+
+
+       function updateTotal(amount) {
+           const totalElement = document.getElementById("cart-total");
+           let currentTotal = parseFloat(totalElement.textContent.replace("€", ""));
+           currentTotal += amount;
+           totalElement.textContent = `${currentTotal.toFixed(2)}€`;
+       }
+
+
+       function checkout() {
+           alert("Compra finalizada. ¡Gracias por elegir TECHCASE PC!");
+       }
+   </script>
+   <section class="cart-container">
+       <h2>Productos en tu carrito</h2>
+       <div id="cart-items">
+           <!-- Los productos se cargarán aquí -->
+       </div>
+       <div class="total-container">
+           <h3>Total: <span id="cart-total">0€</span></h3>
+           <button class="checkout-button" onclick="checkout()">Finalizar Compra</button>
+       </div>
+   </section>
+  
+   <script>
+       window.onload = function() {
+           // Recuperar los productos del carrito desde el localStorage
+           const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+           // Mostrar los productos en el carrito
+           const cartItemsContainer = document.getElementById('cart-items');
+           let total = 0;
+  
+           cart.forEach(product => {
+               const cartItem = document.createElement('div');
+               cartItem.classList.add('cart-item');
+               cartItem.innerHTML = `
+                   <img src="${product.image}" alt="${product.name}">
+                   <div class="cart-item-details">
+                       <p class="cart-item-title">${product.name}</p>
+                       <p class="cart-item-price">${product.price}€</p>
+                   </div>
+                   <button class="cart-item-remove" onclick="removeItem(this, ${product.price})">Eliminar</button>
+               `;
+               cartItemsContainer.appendChild(cartItem);
+               total += product.price;
+           });
+  
+           // Actualizar el total
+           document.getElementById('cart-total').textContent = `${total.toFixed(2)}€`;
+       };
+  
+       function removeItem(button, price) {
+           const item = button.closest(".cart-item");
+           item.remove();
+           updateTotal(-price);
+       }
+  
+       function updateTotal(amount) {
+           const totalElement = document.getElementById("cart-total");
+           let currentTotal = parseFloat(totalElement.textContent.replace("€", ""));
+           currentTotal += amount;
+           totalElement.textContent = `${currentTotal.toFixed(2)}€`;
+       }
+  
+       function checkout() {
+           alert("Compra finalizada. ¡Gracias por elegir TECHCASE PC!");
+           // Limpiar el carrito en localStorage después de la compra
+           localStorage.removeItem('cart');
+       }
+   </script>
+
+
+    <footer>
+       <p>&copy; 2024 TECHCASE PC. Eskubide guztiak erreserbatuta.</p>
+       <div>
+           <a href="pribatasuna.txt" target="_blank">Pribatutasuna eta baldintzak</a>
+       </div>
+   </footer>
+</body>
+</html>
+
+
+

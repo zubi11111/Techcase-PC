@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #9a98b1, #e0dff1); /* Degradado */
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center; /* Alinear el texto */
+}
+
+header img {
+    height: 70px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0; /* Espaciado alrededor del título */
+}
+
+.total-container {
+    margin-top: 30px;
+    text-align: right;
+}
+.total-container h3 {
+    font-size: 1.5rem;
+}
+
+#buscador {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px; /* Espacio entre el título y el buscador */
+    max-width: 400px; /* Limitar el ancho del buscador */
+    width: 100%;
+    justify-content: space-between; /* Alineación para el input y el botón */
+}
+
+.checkout-button {
+    width: 100%;  /* Esto asegura que el botón ocupe todo el ancho disponible */
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.checkout-button:hover {
+    background-color: #1abc9c;
+}
+
+#searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 25px 0 0 25px;
+}
+
+#searchButton {
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #1abc9c;
+}
+
+.resaltado {
+    background-color: #add8e6; /* Azul claro */
+    text-decoration: underline; /* Subrayado */
+    font-weight: bold; /* Para mayor énfasis */
+}
+
+section.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cambia minmax si es necesario */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.product-card h3 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.product-card p {
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section.hero {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Fondo claro (puedes personalizarlo) */
+}
+
+section.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Color del título */
+}
+
+section.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555; /* Color del texto */
+}
+
+section.hero .cta-button {
+    font-size: 1.2rem;
+    color: white; /* Letras blancas */
+    background-color: rgb(171, 213, 224); /* Fondo rojo detrás de las letras */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno para mayor legibilidad */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+section.hero .cta-button:hover {
+    background-color: rgb(218, 171, 224); /* Fondo rojo oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+.menu-container:hover .menu-dropdown {
+    display: block; /* Muestra el menú al pasar el ratón */
+}
+
+.menu-dropdown ul li:hover {
+    background-color: #f4f4f4; /* Cambia el fondo al pasar sobre las opciones */
+}
+
+/* Modal para mostrar el producto en detalle */
+.product-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    min-height: 600px;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Esto distribuye el contenido */
+    height: auto;
+}
+.product-modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.product-modal img {
+    max-width: 60%; /* Tamaño de la imagen */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.product-modal h3 {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.product-modal p {
+    font-size: 1.2rem;
+    color: #555;
+}
+   
+#modalBuyButton {
+    margin-top: 530px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #16a085;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+#modalBuyButton:hover {
+    background-color: #1abc9c;
+}
